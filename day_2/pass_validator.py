@@ -29,12 +29,12 @@ for input in lines:
     letter = count_letter_string[2]
     password = count_letter_string[3]
 
-    letter_count = 0
-    for char in password:
-        if char == letter:
-            letter_count += 1
+    first_letter = password[start]
+    second_letter = password[end]
 
-    if letter_count >= start and letter_count <= end:
+    if first_letter is letter and second_letter is not letter:
+        valid_pass_count += 1
+    elif first_letter is not letter and second_letter is letter:
         valid_pass_count += 1
 
 print("There are {} valid passwords".format(valid_pass_count))
