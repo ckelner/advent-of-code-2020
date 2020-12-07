@@ -4,13 +4,16 @@ tmp_passport = ""
 with open('./input') as fp:
     for line in fp:
         # new passport if we encounter a new line
-        if line == "\n" or line == "":
+        if line == "\n" or line == "" or not line or line == None:
             passports.append(tmp_passport)
             tmp_passport = ""
         else:
             # passports can be on multiple lines, here we combine them into a single
             # string that is space delimited
             tmp_passport += " " + line.rstrip()
+
+# append the very last passport, we don't catch above
+passports.append(tmp_passport)
 
 valid_passport_count = 0
 for passport in passports:
