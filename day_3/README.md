@@ -61,6 +61,7 @@ Starting at the top-left corner of your map and following a slope of right `3` a
 Your puzzle answer was `257`.
 
 --- Part Two ---
+
 Time to check the rest of the slopes - you need to minimize the probability of a sudden arboreal stop, after all.
 
 Determine the number of trees you would encounter if, for each of the following slopes, you start at the top-left corner and traverse the map all the way to the bottom:
