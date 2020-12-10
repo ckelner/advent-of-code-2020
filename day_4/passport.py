@@ -21,7 +21,7 @@ with open('./input') as fp:
         else:
             # passports can be on multiple lines, here we combine them into a single
             # string that is space delimited
-            tmp_passport += " " + line.rstrip()
+            tmp_passport += line.rstrip() + " "
 
 # append the very last passport, we don't catch above
 passports.append(tmp_passport)
