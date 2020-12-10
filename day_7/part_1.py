@@ -31,7 +31,8 @@ for rule in rules:
 # list structure:
 '''
     [
-        type: [
+        type,
+        [
             [type, count],
             [type, count]
         ]
