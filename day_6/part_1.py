@@ -4,6 +4,8 @@ with open('./input') as fp:
     for line in fp:
         # new passport if we encounter a new line
         if line == "\n" or line == "" or not line or line == None:
+            # strip duplicates
+            tmp_answers = "".join(set(tmp_answers))
             answers.append(tmp_answers)
             tmp_answers = ""
         else:
