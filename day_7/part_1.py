@@ -38,9 +38,8 @@ for rule in rules:
         ]
     ]
 '''
-outer_bag_counter = 0 # this really doesn't work, but left it cuz fuck it
+outer_bag_counter = 0
 outer_bag_list = []
-bags_of_shiny_gold_holding = ""
 keep_going = True
 
 while keep_going:
@@ -55,7 +54,6 @@ while keep_going:
                         if bag[0] not in outer_bag_list:
                             outer_bag_counter += 1
                             outer_bag_list.append(bag[0])
-                            bags_of_shiny_gold_holding += bag[0] + ","
 
                     for boh in outer_bag_list:
                         if sbag[0].find(boh) != -1:
